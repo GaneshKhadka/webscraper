@@ -1,9 +1,22 @@
 <div class="htm" style="display: none">
     {!! html_entity_decode($content, ENT_QUOTES, 'UTF-8') !!}
 </div>
-<div id="content-my" style="overflow: auto;width:500px;height:600px;top:20;right:10;position: fixed;background:burlywood;color:black;">
+<div id="content-my" style="overflow: auto;width:1300px;height:600px;top:20;right:10;position: fixed;background:burlywood;color:black;">
 
+<table boder='2' id="content-table" cellpadding='3' cellspacing='3' width='100%'>
+<thead>
+<tr>
+    <th>Company name</th>
+    <th>Category</th>
+    <th>Address</th>
+    <th>Phone number</th>
+    <th>Email</th>
+</tr>
+</thead>
+    <tbody id="dataTble">
 
+    </tbody>
+</table>
 </div>
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -26,7 +39,13 @@
         /*var email=$('.htm textarea:contains("@")');
         $('#content-my').append(email);*/
 
-        var abc = $('.htm').find('.item-container').text();
+        var ab = $('.htm').find('.item-container .col-md-9 div:nth-child(1)');
+        var title = $('.htm').find('.item-container .col-md-9 div:nth-child(1)');
+        var category = $('.htm').find('.item-container .col-md-9 div:nth-child(4)');
+        var address = $('.htm').find('.item-container .col-md-9 div:nth-child(5) div:nth-child(1)');
+        var phone = $('.htm').find('.item-container .col-md-9 div:nth-child(5) div:nth-child(2)');
+        var email = $('.htm').find('.item-container .col-md-9 div:nth-child(5) div:nth-child(3)');
+        // var abc=ab.text();
         // alert(abc);
         // $("#content-my").text(abc);
         /*$(document).ready(function () {
@@ -34,10 +53,16 @@
                 alert(index + " : " + $(element).text());
             });
         });*/
+        // $("#content-my").text(title.text());
 
-        $('.item-container').each(function(i, obj) {
-            $("#content-my").text(abc);
-        });
-
+            $("#dataTble").append(
+                '<tr>' +
+                '<td>' + title.text() + '</td>' +
+                '<td>' +  category.text() + '</td>' +
+                '<td>' + address.text() + '</td>' +
+                '<td>' + phone.text()+ '</td>' +
+                '<td>' + email.text()+ '</td>' +
+                '</tr>'
+            );
     }
 </script>
