@@ -43,6 +43,8 @@
         var contact= $('.htm').find('.item-container').css('background','red');
         var c=contact.children();
 
+        $('span.item-label').remove();
+
         /*var email=$('.htm textarea:contains("@")');
         $('#content-my').append(email);*/
 
