@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="712cfaf3-8e88-4a3e-9d1c-0cba74827521" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/scraper.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/scraper.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="712cfaf3-8e88-4a3e-9d1c-0cba74827521" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +229,7 @@
       <path value="$PROJECT_DIR$/vendor/fabpot/goutte" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="10" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -296,15 +293,15 @@
       <workItem from="1549602654240" duration="13066000" />
       <workItem from="1549763576795" duration="1533000" />
       <workItem from="1549768055358" duration="42360000" />
-      <workItem from="1549937324095" duration="18297000" />
+      <workItem from="1549937324095" duration="19115000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76051000" />
+    <option name="totallyTimeSpent" value="76869000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12708019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
