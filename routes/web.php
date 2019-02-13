@@ -17,4 +17,4 @@ Route::get('/', function () {
 
 });
 
-Route::get('/scraper','ScraperController@scraper');
+Route::resource('/scraper','ScraperController');

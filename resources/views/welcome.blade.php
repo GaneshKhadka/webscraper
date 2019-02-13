@@ -8,7 +8,7 @@
     body{
         margin: 0px;
         padding: 0px;
-        background: #b1ffe2;
+        background: #edfffa;
         background-size: cover;
     }
 
@@ -79,15 +79,16 @@
 </style>
 <body>
   <div class="box">
-      <h2>Create site map</h2>
-      <form>
+      <h2>Web Scraper</h2>
+      <form action="{{route('scraper.store')}}" method="post">
+          @csrf
           <div class="inputbox">
               <input type="text" name="" required="">
               <label>Enter Site name</label>
           </div>
           <div class="inputbox">
-              <input type="text" name="" required="">
-              <label>Enter Site Url</label>
+              <input type="url" name="url" required="">
+              <label>Enter Site URL</label>
           </div>
           <input type="submit" name="" value="Create">
       </form>

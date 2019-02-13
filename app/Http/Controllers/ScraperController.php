@@ -10,9 +10,14 @@ use GuzzleHttp\Exception\RequestException;
 
 class ScraperController extends Controller
 {
-    public function scraper()
+
+    public function index(){
+        return view('welcome');
+    }
+    public function store(Request $r)
     {
-        $ch = curl_init("http://nepalyellowpages.net/search/category/6");
+        $url=$r->url;
+        $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_BINARYTRANSFER, true);
         $content = curl_exec($ch);
