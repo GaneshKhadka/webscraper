@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::resource('/scraper','ScraperController');
+Route::get('saveData','ScraperController@saveData')->name('saveData.saveData');

@@ -15,13 +15,15 @@ class CreateScrapersTable extends Migration
     {
         Schema::create('scrapers', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
+
             $table->string('title');
             $table->string('category');
-            $table->string('address');
-            $table->string('phone');
+            $table->string('address')->nullable();
+            $table->string('phone')->nullable();
             $table->string('email')->nullable();
+            $table->timestamps();
         });
+
     }
 
     /**

@@ -83,13 +83,14 @@
       <form action="{{route('scraper.store')}}" method="post">
           @csrf
           <div class="inputbox">
-              <input type="text" name="" required="">
-              <label>Enter Site name</label>
-          </div>
-          <div class="inputbox">
               <input type="url" name="url" required="">
               <label>Enter Site URL</label>
           </div>
+          <div class="inputbox">
+              <input type="number" name="pages" placeholder="https::...com/.../1 - 100" >
+              <label>Total Pages</label>
+          </div>
+
           <input type="submit" name="" value="Create">
       </form>
   </div>

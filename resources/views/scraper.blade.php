@@ -4,11 +4,18 @@
 
 <div>
     <h2 align="center"><button style="background-color: #5cd08d"><h2> Export to Excel</h2></button></h2><br>
+
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
 </div>
-
+<style>
+    /*textarea{*/
+        /*border:none;*/
+        /*overflow: hidden;*/
+    /*}*/
+</style>
 <div id="content-my" style="overflow: auto;width:1300px;height:600px;top:50;right:30;position: fixed;background:burlywood;color:black;">
+<form action="{{route('saveData.saveData')}}" method="get" >
 
     <table class="a" >
         <thead>
@@ -24,7 +31,10 @@
 
         </tbody>
     </table>
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
 </div>
+
 <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -85,11 +95,11 @@
 
             $("#dataTble").append(
                 '<tr>' +
-                '<td>' + title + '</td>' +
-                '<td>' +  category + '</td>' +
-                '<td>' + address + '</td>' +
-                '<td>' + phone+ '</td>' +
-                '<td>' + email+ '</td>' +
+                '<td><textarea name="title[]">' + title + '</textarea></td>' +
+                '<td><textarea name="category[]">' +  category + '</textarea></td>' +
+                '<td><textarea name="address[]">' + address + '</textarea></td>' +
+                '<td><textarea name="phone[]"> ' + phone+ '</textarea></td>' +
+                '<td><textarea name="email[]"> ' + email+ '</textarea></td>' +
                   '</tr>'
 
             );
@@ -113,6 +123,6 @@
         //    '<td>' + phone.text()+ '</td>' +
         //    '<td>' + email.text()+ '</td>' +
         //    '</tr>'
-        //);v
+        //)
     }
 </script>
