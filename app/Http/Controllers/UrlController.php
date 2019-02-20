@@ -16,5 +16,4 @@ class UrlController extends Controller
         $url->save();
         return redirect(route('scrapers'));
     }
-
 }

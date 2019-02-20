@@ -23,4 +23,3 @@ Route::get('saveData',['as'=>'saveData','uses'=>'ScraperController@saveData']);
 
 Route::post('url',['as'=>'url','uses'=>'UrlController@store']);
 
-Route::resource('/','');

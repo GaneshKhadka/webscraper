@@ -84,7 +84,7 @@ class ScraperController extends Controller
                 'email' => $input['email'][$key],
             ));
         }
-        
+
         return redirect(route('scrapers'));
     }
 
