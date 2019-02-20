@@ -16,6 +16,11 @@ Route::get('/', function () {
 
 
 });
+Route::get('scraper',['as'=>'index','uses'=>'ScraperController@index']);
+Route::get('scrapers',['as'=>'scrapers','uses'=>'ScraperController@store']);
+Route::get('saveData',['as'=>'saveData','uses'=>'ScraperController@saveData']);
 
-Route::resource('/scraper','ScraperController');
-Route::get('saveData','ScraperController@saveData')->name('saveData.saveData');
+
+Route::post('url',['as'=>'url','uses'=>'UrlController@store']);
+
+Route::resource('/','');

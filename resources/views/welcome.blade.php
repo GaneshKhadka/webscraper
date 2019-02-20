@@ -80,14 +80,18 @@
 <body>
   <div class="box">
       <h2>Web Scraper</h2>
-      <form action="{{route('scraper.store')}}" method="post">
+      <form action="{{route('scrapers')}}" method="get">
+          {{--@csrf--}}
+          <button type="submit">data save</button>
+      </form>
+      <form action="{{route('url')}}" method="post">
           @csrf
           <div class="inputbox">
               <input type="url" name="url" required="">
               <label>Enter Site URL</label>
           </div>
           <div class="inputbox">
-              <input type="number" name="pages" placeholder="https::...com/.../1 - 100" >
+              <input type="number" name="number" placeholder="Current page" >
               <label>Total Pages</label>
           </div>
 
