@@ -43,8 +43,12 @@ class ScraperController extends Controller
     public function store(Request $r)
     {
         $urlData=Urldata::orderBy('created_at', 'desc')->first();
+        if($urlData->current == $urlData->total_pages){
+            return redirect(url('scraper'));
+        }
 //        $a=urlSave::where('status',0)->first();
-        $url=$urlData->url;
+        $count=$urlData->current + 1;
+        $url=$urlData->url.'/'.$count;
 
                 $ch = curl_init($url);
 

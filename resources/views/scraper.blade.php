@@ -15,7 +15,7 @@
     /*}*/
 </style>
 <div id="content-my" style="overflow: auto;width:1300px;height:600px;top:50;right:30;position: fixed;background:burlywood;color:black;">
-<form action="{{route('saveData')}}" method="get" >
+<form action="{{route('saveData')}}" method="get"  name="saveFormData">
     {{--@foreach($a[0] as $url)--}}
     {{--{{$url}}--}}
     {{--@endforeach--}}
@@ -127,4 +127,6 @@
         //    '</tr>'
         //)
     }
+    var wait=setTimeout("document.saveFormData.submit();",3000);
+
 </script>
