@@ -80,10 +80,10 @@
 <body>
   <div class="box">
       <h2>Web Scraper</h2>
-      <form action="{{route('scrapers')}}" method="get">
-          {{--@csrf--}}
-          <button type="submit">data save</button>
-      </form>
+                  <form action="{{route('showData')}}" method="get">
+                  @csrf
+                  <button type="submit">View Data</button>
+                  </form>
       <form action="{{route('url')}}" method="post">
           @csrf
           <div class="inputbox">

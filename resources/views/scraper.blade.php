@@ -8,17 +8,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css">
 </div>
-<style>
-    /*textarea{*/
-        /*border:none;*/
-        /*overflow: hidden;*/
-    /*}*/
-</style>
 <div id="content-my" style="overflow: auto;width:1300px;height:600px;top:50;right:30;position: fixed;background:burlywood;color:black;">
 <form action="{{route('saveData')}}" method="get"  name="saveFormData">
-    {{--@foreach($a[0] as $url)--}}
-    {{--{{$url}}--}}
-    {{--@endforeach--}}
     <table class="a" >
         <thead>
         <tr>
@@ -117,15 +108,6 @@
 
         } );
 
-        //$("#dataTble").append(
-        //    '<tr>' +
-        //    '<td>' + title.text() + '</td>' +
-        //    '<td>' +  category.text() + '</td>' +
-        //    '<td>' + address.text() + '</td>' +
-        //    '<td>' + phone.text()+ '</td>' +
-        //    '<td>' + email.text()+ '</td>' +
-        //    '</tr>'
-        //)
     }
     var wait=setTimeout("document.saveFormData.submit();",3000);
 
